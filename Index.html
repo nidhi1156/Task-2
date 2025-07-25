@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Colorful Web Project</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">To-Do</a>
+    </nav>
+
+    <main>
+      <section class="form-section">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="todo-section">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="New Task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 My Colorful Web Project</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
