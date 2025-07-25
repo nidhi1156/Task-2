@@ -1,34 +1,49 @@
-// Form validation
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
+## ✅ README.md
 
-  if (name === "" || email === "") {
-    alert("Please fill in all fields.");
-  } else if (!email.includes("@")) {
-    alert("Please enter a valid email address.");
-  } else {
-    alert("Form submitted successfully!");
-  }
-});
+`markdown
+# 🌈 Colorful Web Project
 
-// To-Do list functionality
-function addTask() {
-  const taskInput = document.getElementById("taskInput");
-  const taskText = taskInput.value.trim();
+A single-page responsive website built using **HTML**, **CSS**, and **JavaScript**, designed for beginners to understand and explore web development basics.
 
-  if (taskText === "") {
-    alert("Please enter a task.");
-    return;
-  }
+---
 
-  const li = document.createElement("li");
-  li.textContent = taskText;
+## 🔥 Features
 
-  // Remove task on click
-  li.onclick = () => li.remove();
+- 📨 Contact Form with validation
+- 📝 To-Do List with add/remove functionality
+- 🎨 Fully responsive and colorful UI
+- ⚙ No external libraries – pure HTML, CSS, and JS
 
-  document.getElementById("taskList").appendChild(li);
-  taskInput.value = "";
-}
+---
+
+## 📁 How to Use
+
+1. **Download or Clone the Repository**
+   bash
+   git clone https://github.com/ks-2004/ColorfulWebProject.git
+`
+
+2. **Open `index.html` in your browser**
+   OR use **Live Server** in VS Code for live preview.
+
+---
+
+## 💡 Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
+
+
+## 🙋‍♀ Author
+
+**Keerthana S**
+B.Tech ECE Student, NSS College of Engineering, Palakkad
+
+---
+
+## 📄 License
+
+Open-source project – feel free to use it for learning or personal projects.
+
+---
